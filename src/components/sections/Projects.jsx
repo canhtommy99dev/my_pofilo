@@ -1,5 +1,6 @@
 "use client";
 
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
@@ -8,38 +9,17 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Weather App",
-      description: "A beautiful weather dashboard with real-time data visualization.",
-      tags: ["React", "API", "Tailwind"],
-    },
-    {
-      title: "Finance Dashboard",
-      description: "Comprehensive financial analytics tool for personal use.",
-      tags: ["Next.js", "Chart.js", "Supabase"],
-    },
-    {
-      title: "Delivery Platform",
-      description: "Tracking and management system for local logistics.",
-      tags: ["Vue", "Firebase", "Maps"],
-    },
-    {
-      title: "Portfolio 2024",
-      description: "Modern minimalist portfolio built with Next.js 14.",
-      tags: ["Next.js", "Framer Motion"],
-    }
-  ];
+  const { t } = useLanguage();
 
   return (
     <section id="projects" className="py-24 bg-background">
       <div className="container px-4 md:px-6 mx-auto">
         <label className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-12 block">
-          Examples of My Work
+          {t.projects.title}
         </label>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
+          {t.projects.items.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

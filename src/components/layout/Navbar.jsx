@@ -23,18 +23,20 @@ const Navbar = () => {
     setMounted(true);
   }, []);
 
+  const { t } = useLanguage();
+
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Work", href: "#projects" },
-    { name: "Contact", href: "#contact" },
+    { name: t.nav.about, href: "#about" },
+    { name: t.nav.experience, href: "#experience" },
+    { name: t.nav.projects, href: "#projects" },
+    { name: t.nav.contact, href: "#contact" },
   ];
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/40 supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6 mx-auto">
         <Link href="/" className="font-bold text-lg tracking-tight hover:text-primary/80 transition-colors">
-          Portfolio
+          Portfolio Cảnh Dev
         </Link>
         
         <div className="flex items-center gap-6">

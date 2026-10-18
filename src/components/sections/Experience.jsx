@@ -1,39 +1,21 @@
 "use client";
 
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 import React from "react";
 import { motion } from "framer-motion";
 
 const Experience = () => {
-  const experiences = [
-    {
-      role: "Senior Frontend Developer",
-      company: "Tech Corp",
-      period: "2023 - Present",
-      description: "Leading the frontend team, migrating to Next.js 14, and establishing design systems.",
-    },
-    {
-      role: "Frontend Developer",
-      company: "Creative Agency",
-      period: "2021 - 2023",
-      description: "Developed award-winning websites for international clients using React and GSAP.",
-    },
-    {
-      role: "Junior Developer",
-      company: "StartUp Inc",
-      period: "2019 - 2021",
-      description: "Full stack development with Node.js and React. Built internal dashboard tools.",
-    },
-  ];
+  const { t } = useLanguage();
 
   return (
     <section id="experience" className="py-24 bg-background">
       <div className="container px-4 md:px-6 mx-auto">
         <label className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-12 block">
-          My Experience
+          {t.experience.title}
         </label>
         
         <div className="space-y-12 max-w-3xl">
-          {experiences.map((exp, index) => (
+          {t.experience.items.map((exp, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
