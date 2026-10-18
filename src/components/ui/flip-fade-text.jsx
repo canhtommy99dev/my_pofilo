@@ -62,10 +62,13 @@ const Word = memo(function Word({
     letterDuration,
     textClassName
 }) {
-    const words = useMemo(() => text.split(" "), [text])
+    const words = useMemo(() => text.split(" "), [text]);
 
-    // Calculate total previous characters for delay offset
-    let charCount = 0;
+    const wordOffsets = useMemo(() => {
+        return words.map((_, idx) =>
+            words.slice(0, idx).reduce((acc, curr) => acc + curr.length + 1, 0)
+        );
+    }, [words]);
 
     return (
         <div
@@ -75,10 +78,10 @@ const Word = memo(function Word({
             )}
         >
             {words.map((word, wordIndex) => {
-                const currentWordDelayOffset = charCount * staggerDelay;
-                const currentWordExitDelayOffset = charCount * exitStaggerDelay;
+                const currentWordDelayOffset = (wordOffsets[wordIndex] || 0) * staggerDelay;
+                const currentWordExitDelayOffset = (wordOffsets[wordIndex] || 0) * exitStaggerDelay;
 
-                const wordElement = (
+                return (
                     <span key={`${word}-${wordIndex}`} className="inline-flex whitespace-nowrap">
                         {word.split("").map((char, charIndex) => (
                             <Letter
@@ -91,9 +94,6 @@ const Word = memo(function Word({
                         ))}
                     </span>
                 );
-
-                charCount += word.length + 1; // +1 for space (conceptually, though not rendered as a letter)
-                return wordElement;
             })}
         </div>
     );

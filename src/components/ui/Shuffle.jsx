@@ -57,9 +57,10 @@ const Shuffle = ({
 
     useEffect(() => {
         if ('fonts' in document) {
-            if (document.fonts.status === 'loaded') setFontsLoaded(true);
-            else document.fonts.ready.then(() => setFontsLoaded(true));
-        } else setFontsLoaded(true);
+            document.fonts.ready.then(() => setFontsLoaded(true));
+        } else {
+            Promise.resolve().then(() => setFontsLoaded(true));
+        }
     }, []);
 
     useGSAP(
@@ -385,7 +386,7 @@ const Shuffle = ({
     const Tag = tag || 'p';
     const commonStyle = useMemo(() => ({ textAlign, ...style }), [textAlign, style]);
 
-    return React.createElement(Tag, { ref: ref, className: classes, style: commonStyle }, text);
+    return <Tag ref={ref} className={classes} style={commonStyle}>{text}</Tag>;
 };
 
 export default Shuffle;
