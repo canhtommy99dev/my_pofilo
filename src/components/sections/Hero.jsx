@@ -154,7 +154,7 @@ const Hero = () => {
               className="h-11 w-11 rounded-full border-border/80 text-muted-foreground hover:text-foreground"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/canhtommy99dev"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub Profile"
@@ -169,7 +169,7 @@ const Hero = () => {
               className="h-11 w-11 rounded-full border-border/80 text-muted-foreground hover:text-foreground"
             >
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/canhtommy99devmc"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn Profile"
@@ -188,7 +188,7 @@ const Hero = () => {
           className="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-xl mx-auto text-left"
         >
           <div className="p-3 rounded-xl border border-border/60 bg-card/40 backdrop-blur-sm">
-            <div className="text-xl font-bold text-foreground">5+ Years</div>
+            <div className="text-xl font-bold text-foreground">6+ Years</div>
             <div className="text-xs text-muted-foreground">Engineering Exp</div>
           </div>
           <div className="p-3 rounded-xl border border-border/60 bg-card/40 backdrop-blur-sm">

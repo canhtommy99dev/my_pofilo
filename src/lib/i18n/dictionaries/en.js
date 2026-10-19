@@ -18,7 +18,7 @@ export const en = {
   },
   about: {
     title: "About Me",
-    content: "I'm a passionate developer with 5+ years of experience building modern web applications. I specialize in React, Next.js, Flutter, Node.js, Python, Android-Koltin, iOS-Swift and creating intuitive user experiences. Based in dev, focusing on performance, accessibility, and clean code.",
+    content: "I'm a passionate developer with 6+ years of experience building modern web applications. I specialize in React, Next.js, Flutter, Node.js, Python, Android-Koltin, iOS-Swift and creating intuitive user experiences. Based in dev, focusing on performance, accessibility, and clean code.",
   },
   experience: {
     title: "Experience",

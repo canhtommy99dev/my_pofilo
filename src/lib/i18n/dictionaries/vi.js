@@ -18,7 +18,7 @@ export const vi = {
   },
   about: {
     title: "Giới thiệu",
-    content: "Tôi là một lập trình viên đam mê với hơn 5 năm kinh nghiệm xây dựng các ứng dụng web hiện đại. Tôi chuyên về React, Next.js, Flutter, Node.js, Python, Android-Koltin, iOS-Swift và tạo ra trải nghiệm người dùng trực quan. Làm việc tại dev, tập trung vào hiệu suất, khả năng tiếp cận và mã sạch.",
+    content: "Tôi là một lập trình viên đam mê với hơn 6 năm kinh nghiệm xây dựng các ứng dụng web hiện đại. Tôi chuyên về React, Next.js, Flutter, Node.js, Python, Android-Koltin, iOS-Swift và tạo ra trải nghiệm người dùng trực quan. Làm việc tại dev, tập trung vào hiệu suất, khả năng tiếp cận và mã sạch.",
   },
   experience: {
     title: "Kinh nghiệm",
