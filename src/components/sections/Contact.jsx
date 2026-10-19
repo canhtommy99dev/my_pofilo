@@ -17,12 +17,13 @@ import {
   Clock,
   Github,
   Linkedin,
+  Phone,
 } from "lucide-react";
 
 const Contact = () => {
   const { t } = useLanguage();
   const [copied, setCopied] = useState(false);
-  const email = "canhdev.dev@gmail.com";
+  const email = "canhvteryvn@gmail.com";
 
   const handleCopyEmail = () => {
     try {
@@ -123,7 +124,7 @@ const Contact = () => {
             {/* Social Links Footer */}
             <div className="pt-8 mt-6 border-t border-border/40 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-muted-foreground relative z-10">
               <a
-                href="https://github.com"
+                href="https://github.com/canhtommy99dev"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-1.5 hover:text-foreground transition-colors"
@@ -133,7 +134,7 @@ const Contact = () => {
               </a>
               <span className="text-border">•</span>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/canhtommy99devmc"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-1.5 hover:text-foreground transition-colors"
@@ -148,6 +149,14 @@ const Contact = () => {
               >
                 <Mail className="h-3.5 w-3.5" />
                 <span>{email}</span>
+              </a>
+              <span className="text-border">•</span>
+              <a
+                href={`tel:+84356738683`}
+                className="flex items-center gap-1.5 hover:text-foreground transition-colors"
+              >
+                <Phone className="h-3.5 w-3.5" />
+                <span>+84 356 738 683 (Zalo/Whastapp)</span>
               </a>
             </div>
           </Card>

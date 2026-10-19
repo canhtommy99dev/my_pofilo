@@ -18,10 +18,6 @@ const Footer = () => {
       <div className="container max-w-7xl px-4 md:px-6 mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand & Copyright */}
         <div className="flex flex-col sm:flex-row items-center gap-3 text-center sm:text-left">
-          <Avatar className="h-7 w-7 border border-border">
-            <AvatarImage src="/IMG_2259.jpeg" alt="CanhDEV" className="object-cover" />
-            <AvatarFallback className="text-[10px]">CD</AvatarFallback>
-          </Avatar>
           <div className="flex flex-col">
             <span className="text-xs font-semibold text-foreground">
               Cảnh DEV (Do Canh Tommy)
@@ -49,7 +45,7 @@ const Footer = () => {
               className="h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/canhtommy99dev"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
@@ -64,7 +60,7 @@ const Footer = () => {
               className="h-8 w-8 rounded-full text-muted-foreground hover:text-foreground"
             >
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/canhtommy99devmc"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"

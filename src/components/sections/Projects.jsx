@@ -97,24 +97,6 @@ const Projects = () => {
                       ))}
                     </div>
                   </CardContent>
-
-                  <CardFooter className="pt-4 border-t border-border/40 flex items-center justify-between gap-3">
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="text-xs h-8 px-3 rounded-lg gap-1.5 text-muted-foreground hover:text-foreground"
-                    >
-                      <Github className="h-3.5 w-3.5" />
-                      <span>Code</span>
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="text-xs h-8 px-4 rounded-lg gap-1.5 shadow-sm"
-                    >
-                      <span>Live Demo</span>
-                      <ExternalLink className="h-3 w-3" />
-                    </Button>
-                  </CardFooter>
                 </Card>
               </motion.div>
             );

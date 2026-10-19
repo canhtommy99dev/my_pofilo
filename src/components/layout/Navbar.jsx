@@ -47,16 +47,6 @@ const Navbar = () => {
             href="/"
             className="flex items-center gap-2.5 group transition-transform active:scale-95"
           >
-            <div className="relative">
-              <Avatar className="h-8 w-8 border border-border ring-1 ring-primary/20 transition-all duration-300 group-hover:ring-primary/50">
-                <AvatarImage src="/IMG_2259.jpeg" alt="CanhDEV" className="object-cover" />
-                <AvatarFallback className="text-xs font-semibold">CD</AvatarFallback>
-              </Avatar>
-              <span className="absolute -bottom-0.5 -right-0.5 flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500 border border-background" />
-              </span>
-            </div>
             <div className="flex flex-col text-left">
               <span className="text-sm font-semibold tracking-tight text-foreground flex items-center gap-1.5">
                 Cảnh DEV

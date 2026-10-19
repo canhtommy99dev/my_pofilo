@@ -24,22 +24,22 @@ export const vi = {
     title: "Kinh nghiệm",
     items: [
       {
-        role: "Lập trình viên Frontend cấp cao",
-        company: "Tech Corp",
-        period: "2023 - Hiện tại",
-        description: "Dẫn dắt nhóm frontend, chuyển đổi sang Next.js 14 và thiết lập hệ thống thiết kế.",
+        role: "Freelance",
+        company: "Freelance",
+        period: "2024 - Hiện tại",
+        description: "Làm tất cả ứng dụng mobile,website.",
       },
       {
-        role: "Lập trình viên Frontend",
-        company: "Creative Agency",
-        period: "2021 - 2023",
-        description: "Phát triển các trang web đoạt giải thưởng cho khách hàng quốc tế sử dụng React và GSAP.",
+        role: "Lập trình viên Mobile",
+        company: "Cty TNHH & Quảng Cáo Alexmedia",
+        period: "2020 - 2024",
+        description: "Phát triển ứng dụng mobile, website.",
       },
       {
-        role: "Lập trình viên Junior",
+        role: "Thực tập sinh - Lập trình viên Junior",
         company: "StartUp Inc",
-        period: "2019 - 2021",
-        description: "Phát triển full stack với Node.js và React. Xây dựng các công cụ bảng điều khiển nội bộ.",
+        period: "2019",
+        description: "Phát triển full stack với  Node.js và React,Mobile Android. Xây dựng các công cụ bảng điều khiển nội bộ.",
       },
     ],
   },
@@ -47,25 +47,25 @@ export const vi = {
     title: "Các dự án tiêu biểu",
     items: [
       {
-        title: "Ứng dụng Thời tiết",
-        description: "Bảng điều khiển thời tiết đẹp mắt với trực quan hóa dữ liệu thời gian thực.",
-        tags: ["React", "API", "Tailwind"],
+        title: "MÓNG CÁI SHOPPING",
+        description: "Trang thương mại điện tử mua bán online, giao hàng khu vực Móng Cái.",
+        tags: ["Flutter", "React", "API"],
       },
       {
-        title: "Bảng điều khiển Tài chính",
-        description: "Công cụ phân tích tài chính toàn diện cho mục đích cá nhân.",
-        tags: ["Next.js", "Chart.js", "Supabase"],
+        title: "HẠ LONG SHOPPING",
+        description: "Trang thương mại điện tử mua bán online, giao hàng khu vực Hạ Long.",
+        tags: ["Flutter", "React", "API"],
       },
       {
-        title: "Nền tảng Giao hàng",
-        description: "Hệ thống theo dõi và quản lý logictics địa phương.",
-        tags: ["Vue", "Firebase", "Maps"],
+        title: "Website Viễn Dương",
+        description: "Website giới thiệu Công ty TNHH Xúc tiến Thương mại Viễn Dương.",
+        tags: ["NextJS"],
       },
       {
-        title: "Portfolio 2024",
-        description: "Portfolio tối giản hiện đại được xây dựng với Next.js 14.",
-        tags: ["Next.js", "Framer Motion"],
-      }
+        title: "Website Giấy rút Hà Phương",
+        description: "Website giới thiệu Giấy rút Hà Phương.",
+        tags: ["NextJS"],
+      },
     ]
   },
   skills: {
