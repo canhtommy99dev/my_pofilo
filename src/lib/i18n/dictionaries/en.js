@@ -24,6 +24,29 @@ export const en = {
     title: "Experience",
     items: [
       {
+        role: "Freelance",
+        company: "Freelance",
+        period: "2024 - Present",
+        description: "Development of various mobile applications and websites.",
+      },
+      {
+        role: "Mobile Developer",
+        company: "Alexmedia Advertising & Trading Co., Ltd.",
+        period: "2020 - 2024",
+        description: "Development of mobile applications and websites.",
+      },
+      {
+        role: "Intern - Junior Developer",
+        company: "StartUp Inc",
+        period: "2019",
+        description: "Full stack development with Node.js and React, Mobile Android. Building internal dashboard tools.",
+      },
+    ],
+  },
+  projects: {
+    title: "Examples of My Work",
+    items: [
+      {
         title: "MONG CAI SHOPPING",
         description: "An e-commerce platform for online shopping and delivery in the Mong Cai area.",
         tags: ["Flutter", "React", "API"],
@@ -43,31 +66,6 @@ export const en = {
         description: "Product showcase website for Ha Phuong facial tissues.",
         tags: ["NextJS"],
       },
-    ],
-  },
-  projects: {
-    title: "Examples of My Work",
-    items: [
-      {
-        title: "Weather App",
-        description: "A beautiful weather dashboard with real-time data visualization.",
-        tags: ["React", "API", "Tailwind"],
-      },
-      {
-        title: "Finance Dashboard",
-        description: "Comprehensive financial analytics tool for personal use.",
-        tags: ["Next.js", "Chart.js", "Supabase"],
-      },
-      {
-        title: "Delivery Platform",
-        description: "Tracking and management system for local logistics.",
-        tags: ["Vue", "Firebase", "Maps"],
-      },
-      {
-        title: "Portfolio 2024",
-        description: "Modern minimalist portfolio built with Next.js 14.",
-        tags: ["Next.js", "Framer Motion"],
-      }
     ]
   },
   skills: {
